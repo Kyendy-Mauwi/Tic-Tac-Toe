@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Grape+Nuts&family=Hurricane&family=Rubik+Microbe&family=Rubik:wght@300;400&family=Water+Brush&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik", cursive;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+/* navigation bar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 30px 0;
+  font-family: "Rubik", sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* .navbar.sticky {
+  padding: 15px 0;
+  background-color: #ff5722;
+} */
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  font-size: 35px;
+  font-weight: 0;
+  color: #ffffff;
+  font-family: "Rubik Microbe", sans-serif;
+  text-decoration: none;
+}
+
+.navbar .logo a span {
+  font-family: "Rubik Microbe", sans-serif;
+  text-decoration: none;
+  color: #ff5722;
+}
+
+/* .navbar.sticky .logo a span {
+  color: #ffffff;
+  transition: all 0.3s ease;
+} */
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .menu li a {
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+  color: #ff5722;
+}
+
+/* .navbar.sticky .menu li a:hover {
+  color: #ffffff;
+} */
+
+/* main */
+.background {
+  background-color: #000;
+  height: 100vh;
+  padding-top: 1px;
+}
+
+.title {
+  color: #ff5722;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10%;
+}
+
+.title h1 {
+  font-family: "Rubik Microbe", sans-serif;
+}
+
+.display {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  max-width: 300px;
+}
+
+.tile {
+  border: 1px solid white;
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.playerX {
+  color: #ff5722;
+}
+
+.playerO {
+  color: #ff5722;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.controls button {
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+.restart {
+  background-color: #498afb;
+}
+
+#reset {
+  background-color: #ef6c00;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 9px 22px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+.contact-me {
+  width: 100%;
+  height: 290px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-me p {
+  color: whitesmoke;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.contact-me .button-two {
+  background-color: #ef6c00;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 9px 22px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+.contact-me .button-two:hover {
+  background-color: transparent;
+  border: 2px solid #ef6c00;
+  cursor: pointer;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p:nth-child(1) {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+footer p:nth-child(2) {
+    font-size: 17px;
+    color: white;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.social {
+    display: flex;
+}
+
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EF6C00;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social a:hover {
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+.end {
+    position: absolute;
+    color: #EF6C00;
+    bottom: 35px;
+    font-size: 14px;
+}
